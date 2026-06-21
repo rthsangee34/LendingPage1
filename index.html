@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smarter Digital Experiences | SaaS</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="cursor-dot"></div>
+
+    <!-- Soft background glow -->
+    <div class="bg-glow blob-1"></div>
+    <div class="bg-glow blob-2"></div>
+
+    <div class="app-container">
+        <!-- Navbar -->
+        <nav class="navbar">
+            <div class="logo">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="url(#gradient)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <defs>
+                        <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" stop-color="#4A5CFF" />
+                            <stop offset="100%" stop-color="#FF6A5C" />
+                        </linearGradient>
+                    </defs>
+                    <path d="M12 2L2 22h20L12 2z"/>
+                </svg>
+                <span style="margin-left: 8px; font-weight: 700; font-size: 1.2rem; color: #111;">Krystal</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Products <i class="fa-solid fa-chevron-down" style="font-size: 0.7em;"></i></a></li>
+                <li><a href="#">Platform <i class="fa-solid fa-chevron-down" style="font-size: 0.7em;"></i></a></li>
+                <li><a href="#">Blogs</a></li>
+            </ul>
+            <div class="nav-right">
+                <a href="#" class="btn btn-primary nav-btn">Get Started &rarr;</a>
+            </div>
+        </nav>
+
+        <!-- Hero Section -->
+        <main class="hero">
+            <div class="hero-left">
+                <div class="badge fade-in">
+                    Get 25% off in one order <i class="fa-solid fa-check" style="color:#FF6A5C; margin-left: 4px;"></i>
+                </div>
+                <h1 class="fade-in stagger-1">
+                    Smarter <span class="highlight">Digital Experiences,</span><br>
+                    Scalable SaaS
+                </h1>
+                <p class="fade-in stagger-2">
+                    Empower your business with next-generation SaaS solutions designed for speed and simplicity. Automate workflows, manage data effortlessly, and unlock real-time insights. Our secure and scalable platform grows with you — from startup to enterprise.
+                </p>
+                <div class="cta-group fade-in stagger-3">
+                    <a href="#" class="btn btn-primary btn-large">Get Started &rarr;</a>
+                    <a href="#" class="btn btn-glass btn-large">Book a Demo</a>
+                </div>
+            </div>
+
+            <div class="hero-right">
+                <!-- Simple, Elegant Light Wave Ribbons -->
+                <div class="light-wave-container">
+                    <svg viewBox="0 0 800 600" class="light-wave-svg" preserveAspectRatio="xMidYMid meet">
+                        <defs>
+                            <linearGradient id="gradBlue" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" stop-color="#4A5CFF" stop-opacity="0.8"/>
+                                <stop offset="100%" stop-color="#8E9CFF" stop-opacity="0.2"/>
+                            </linearGradient>
+                            <linearGradient id="gradOrange" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" stop-color="#FF6A5C" stop-opacity="0.8"/>
+                                <stop offset="100%" stop-color="#FFB3A6" stop-opacity="0.2"/>
+                            </linearGradient>
+                            <linearGradient id="gradPurple" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" stop-color="#9B8CFF" stop-opacity="0.8"/>
+                                <stop offset="100%" stop-color="#D6CFFF" stop-opacity="0.2"/>
+                            </linearGradient>
+                            <filter id="softGlow" x="-20%" y="-20%" width="140%" height="140%">
+                                <feGaussianBlur stdDeviation="15" result="blur" />
+                                <feComposite in="SourceGraphic" in2="blur" operator="over" />
+                            </filter>
+                        </defs>
+                        
+                        <!-- Smooth cubic bezier curves representing glowing light waves -->
+                        <path class="wave-ribbon r1" d="M -100 250 C 250 50, 550 450, 900 250" fill="none" stroke="url(#gradBlue)" stroke-width="70" stroke-linecap="round" filter="url(#softGlow)" />
+                        <path class="wave-ribbon r2" d="M -100 350 C 300 550, 500 50, 900 350" fill="none" stroke="url(#gradOrange)" stroke-width="100" stroke-linecap="round" filter="url(#softGlow)" />
+                        <path class="wave-ribbon r3" d="M -100 450 C 400 200, 400 550, 900 400" fill="none" stroke="url(#gradPurple)" stroke-width="50" stroke-linecap="round" filter="url(#softGlow)" />
+                    </svg>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
